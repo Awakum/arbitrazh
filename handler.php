@@ -1,36 +1,28 @@
 <?php
 
-$ref = '893774'; // id вебмастера
-$key = '51a8f6b6b800c707f1532893fb58703a'; // ключ api вебмастера
-$prod_id = '8113'; // id товара
+$ref = '893774';
+$api_key = '51a8f6b6b800c707f1532893fb58703a'; 
 
 $url = 'http://m1-shop.ru/send_order/';
 $data = [
 	'ref' => $ref,
-	'api_key' => $key,
-	'product_id' => $prod_id,
+	'api_key' => $api_key,
 	'phone' => $_POST['phone'],
 	'name' => $_POST['name'],
 	'ip' => $_SERVER['REMOTE_ADDR'],
+	'product_id' => $_GET['pid'],
 	'w' => $_GET['utm_source'],
-	/* 's' => 'test_s', */
-	/* 't' => 'test_t', */
-	/* 'p' => 'test_p', */
-	/* 'm' => 'test_m' */
 ];
 
 $numItems = count($_GET);
 $i = 0;
-$uri = '';
+$params = '';
 foreach ($_GET as $key => $value) {
-	$uri .= $key . '=' . $value; 
+	$params .= $key . '=' . $value;
 	if(++$i !== $numItems) {
-		$uri .= '&';
+		$params .= '&';
 	}
 }
-/* var_dump($_GET); */
-/* echo $uri; */
-/* return false; */
 
 $process = curl_init();
 curl_setopt($process, CURLOPT_HEADER, 0);
@@ -43,18 +35,19 @@ curl_setopt($process, CURLOPT_POST, true);
 curl_setopt($process, CURLOPT_POSTFIELDS, $data);
 curl_setopt($process, CURLOPT_URL, $url);
 
-echo $return = curl_exec($process);
+$return = curl_exec($process);
 
 curl_close($process);
 
-if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-         $url = "https://";   
-    else  
-         $url = "http://";   
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+	$url = "https://";   
+} else {  
+	$url = "http://";   
+}
 
 $url .= $_SERVER['HTTP_HOST'];  
 
-header('Location: ' . $url . '/call.php?' . $uri);
+header('Location: ' . $url . '/call.php?' . $params);
 exit;
 
 ?>
