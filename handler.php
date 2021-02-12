@@ -39,15 +39,16 @@ $return = curl_exec($process);
 
 curl_close($process);
 
+$url = '';
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
 	$url = "https://";   
 } else {  
 	$url = "http://";   
 }
 
-$url .= $_SERVER['HTTP_HOST'];  
+$url .= $_SERVER['SERVER_NAME'];  
 
-header('Location: ' . $url . '/call.php?' . $params);
-die();
+	header('Location: ' . $url . '/call.php?' . $params);
+	exit();
 
 ?>
