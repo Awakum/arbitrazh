@@ -40,7 +40,7 @@ $return = curl_exec($process);
 curl_close($process);
 
 
-	header('Location: ' . __DIR__ . '/call.php?' . $params);
+	header('Location: ' . pathinfo('$_SERVER['PHP_SELF'], PATHINFO_DIRNAME) . '/call.php?' . $params);
 	exit();
 
 ?>
