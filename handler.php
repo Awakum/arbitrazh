@@ -46,9 +46,9 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
 	$url = "http://";   
 }
 
-$url .= $_SERVER['SERVER_NAME'];  
+$url .= $_SERVER['SERVER_NAME']; 
 
-	header('Location: ' . $_SERVER['PHP_SELF']. '/call.php?' . $params);
+	header('Location: ' . $url . '/call.php?' . $params);
 	exit();
 
 ?>
