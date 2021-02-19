@@ -1,7 +1,7 @@
 <?php
 
-$ref = '893774';
-$api_key = '51a8f6b6b800c707f1532893fb58703a'; 
+$ref = '109727';
+$api_key = '11285cb0c12b26cca24814fe5a7922e6'; 
 
 $url = 'http://m1-shop.ru/send_order/';
 $data = [
