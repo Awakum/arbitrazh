@@ -12,6 +12,7 @@ $data = [
 	'ip' => $_SERVER['REMOTE_ADDR'],
 	'product_id' => $_GET['pid'],
 	'w' => $_GET['utm_source'],
+	's' => $_POST['subid'],
 ];
 
 $numItems = count($_GET);
