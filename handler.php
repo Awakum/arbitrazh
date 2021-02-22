@@ -10,7 +10,7 @@ $data = [
 	'phone' => $_POST['phone'],
 	'name' => $_POST['name'],
 	'ip' => $_SERVER['REMOTE_ADDR'],
-	'product_id' => $_GET['pid'],
+	'product_id' => $_POST['pid'],
 	'w' => $_GET['utm_source'],
 	's' => $_POST['subid'],
 ];
