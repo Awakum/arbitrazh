@@ -1,9 +1,10 @@
 <?php
 define('API_KEY', '11285cb0c12b26cca24814fe5a7922e6');
+define('REF_ID', '109727');
 define('URL', 'http://m1-shop.ru/send_order/');
 
 $data = [
-	'ref' => $_POST['refid'],
+	'ref' => REF_ID,
 	'api_key' => API_KEY,
 	'phone' => $_POST['phone'],
 	'name' => $_POST['name'],
