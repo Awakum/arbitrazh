@@ -38,8 +38,8 @@ curl_setopt($process, CURLOPT_URL, URL);
 $return = curl_exec($process);
 
 curl_close($process);
-
-header('Location: ' . pathinfo($_SERVER['PHP_SELF'], PATHINFO_DIRNAME) . '/call.php?' . $params);
+// header('Location: ' . pathinfo($_SERVER['PHP_SELF'], PATHINFO_DIRNAME) . '/call.php?' . $params);
+header('Location: /call.php?' . $params);
 exit();
 
 ?>
