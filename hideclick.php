@@ -2,8 +2,8 @@
 /* Required settings     */
 $CLOAKING['WHITE_PAGE'] = '_index.php';//PHP/HTML file or URL used for bots
 $CLOAKING['OFFER_PAGE'] = 'https://qawde.com/my-ultraprost';//PHP/HTML file or URL offer used for real users
-$CLOAKING['DEBUG_MODE'] = 'on';// replace "on" with "off" to switch from debug to production mode
-$CLOAKING['STEALTH'] = 'off';// replace "on" with "off" to hide stat page
+$CLOAKING['DEBUG_MODE'] = 'off';// replace "on" with "off" to switch from debug to production mode
+$CLOAKING['STEALTH'] = 'on';// replace "on" with "off" to hide stat page
 /*********************************************/
 /* Available additional settings  */
 
