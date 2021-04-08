@@ -1,5 +1,5 @@
 <?php
-define('API_KEY', '11285cb0c12b26cca24814fe5a7922e6');
+// define('API_KEY', '12345');
 define('REF_ID', '109727');
 define('URL', 'http://m1-shop.ru/send_order/');
 
