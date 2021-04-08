@@ -87,7 +87,7 @@ $CLOAKING['PARANOID'] = false;
 /*********************************************/
 /* You API key.                              */
 /* DO NOT SHARE API KEY! KEEP IT SECRET!     */
-$CLOAKING['API_SECRET_KEY'] = 'v191639b6e09f2437d9e52575eafed2060';
+// $CLOAKING['API_SECRET_KEY'] = '12345';
 /*********************************************/
 // DO NOT EDIT ANYTHING BELOW !!!
 if(!empty($CLOAKING['VERSION']) || !empty($GLOBALS['CLOAKING']['VERSION'])) die('Recursion Error');
