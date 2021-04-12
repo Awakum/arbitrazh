@@ -34,7 +34,7 @@ $CLOAKING['BLOCK_APPLE'] = false;
 $CLOAKING['BLOCK_ANDROID'] = false;
 
 /* change 'false' to 'true' to block Windows devices */
-$CLOAKING['BLOCK_WIN'] = true;
+$CLOAKING['BLOCK_WIN'] = false;
 
 /* change 'false' to 'true' to block mobile devices */
 $CLOAKING['BLOCK_MOBILE'] = false;
@@ -57,7 +57,7 @@ $CLOAKING['PARANOID'] = false;
 
 /* secret UTM options */
 // if allow_utm_must is set and the same UTM string is not present in the request, the white page will be displayed.
-// $CLOAKING['allow_utm_must']='utm_offer=true';
+$CLOAKING['allow_utm_must']='utm_offer=true';
 
 // if allow_utm_opt is set and NONE of the keys are present in the request, the white page will be displayed.
 // (keywords must be separated by commas)
@@ -74,7 +74,7 @@ $CLOAKING['PARANOID'] = false;
 /*********************************************/
 /* You API key.                              */
 /* DO NOT SHARE API KEY! KEEP IT SECRET!     */
-// $CLOAKING['API_SECRET_KEY'] = '12345';
+$CLOAKING['API_SECRET_KEY'] = 'v191639b6e09f2437d9e52575eafed2060';
 /*********************************************/
 // DO NOT EDIT ANYTHING BELOW !!!
 if(!empty($CLOAKING['VERSION']) || !empty($GLOBALS['CLOAKING']['VERSION'])) die('Recursion Error');
