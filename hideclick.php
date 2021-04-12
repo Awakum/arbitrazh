@@ -57,7 +57,7 @@ $CLOAKING['PARANOID'] = false;
 
 /* secret UTM options */
 // if allow_utm_must is set and the same UTM string is not present in the request, the white page will be displayed.
-// $CLOAKING['allow_utm_must']='utm_source=adwords';
+$CLOAKING['allow_utm_must']='utm_offer=true';
 
 // if allow_utm_opt is set and NONE of the keys are present in the request, the white page will be displayed.
 // (keywords must be separated by commas)
