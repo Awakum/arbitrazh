@@ -1,18 +1,3 @@
-<?php
-/* Required settings     */
-$CLOAKING["WHITE_PAGE"] = "_index.php";//PHP/HTML file or URL used for bots
-$CLOAKING["OFFER_PAGE"] = "https://qawde.com/my-ultraprost";//PHP/HTML file or URL offer used for real users
-$CLOAKING["DEBUG_MODE"] = "off";// replace \"on\" with \"off\" to switch from debug to production mode
-$CLOAKING["STEALTH"] = "on";// replace \"on\" with \"off\" to hide stat page
-/*********************************************/
-/* Available additional settings  */
-
-/* Geo filter: Display offer page only to visitors from allowed countries.  */
-/* For example, if you enter 'RU,UA' in the next line, system will only allow users from Russia and Ukraine */
-$CLOAKING["ALLOW_GEO"] = "MY";
-
-/* УДАЛИТЬ */
-
 /* Blocked Geo filter: Hide offer page from visitors of selected countries.  */
 /* For example, if you enter 'IN,CN' in the next line, system will block users from India and China */
 //$CLOAKING['BLOCK_GEO'] = 'IN,CN';
