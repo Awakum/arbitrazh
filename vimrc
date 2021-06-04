@@ -12,6 +12,8 @@ set wrap linebreak nolist
 set cursorline
 set ruler
 set hlsearch
+set cursorcolumn
+set cursorline
 set t_Co=256
 " let g:netrw_browse_split=4      " Open file in previous buffer
 
