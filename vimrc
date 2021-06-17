@@ -125,7 +125,7 @@ call plug#end()
 
 " let g:workspace_autosave_ignore = ['gitcommit']
 
-colorscheme onehalfdark
+colorscheme onehalflight
 " let g:gitgutter_git_executable = 'C:\Windows\Sysnative\wsl.exe'
 " let g:gitgutter_git_executable = 'C:/Program Files/Git/bin/git.exe'
 " let g:gitgutter_git_executable = '\"C:\Program\ Files\Git\bin\git.exe\"'
@@ -162,7 +162,7 @@ let $FZF_DEFAULT_OPTS='
 "       \ <SID>check_back_space() ? "\<Tab>" :
 "       \ coc#refresh()
 
-let g:airline_theme='onehalflight'
+let g:airline_theme='onehalfdark'
 
 let g:user_emmet_expandabbr_key='<Tab>' " expand emmet snippet by <tab>
 
