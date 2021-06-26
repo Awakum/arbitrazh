@@ -41,16 +41,15 @@ augroup END
 set foldmethod=indent
 
 if has("gui_running")
-  set lines=53 columns=110
   set guioptions -=m
   set guioptions=Ace
   set guioptions -=T
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
-  elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h14
+  elseif has("gui_macvim") set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
-    set guifont=JetBrains\ Mono:h10:cANSI
+    set guifont=Consolas:h10:cANSI
+    set rtp +=~/vimfiles
   endif
   language en  " sets the language of the messages / ui (vim)
 endif
